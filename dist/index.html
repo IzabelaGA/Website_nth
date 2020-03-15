@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic-ext"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Ribeye&display=swap&subset=latin-ext" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/main.css">
   <title>Website</title>
@@ -15,24 +18,28 @@
 
 <body data-spy="scroll" data-target="#navbar">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <a class="navbar-brand" href="#"><i class="fas fa-baby"></i> ĘĄ pieluszki kauczukowe</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fas fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Home</a>
-        <a class="nav-item nav-link" href="#features">Features</a>
-        <a class="nav-item nav-link" href="#pricing">Pricing</a>
-
+        <a class="nav-item nav-link active" href="#home">Strona domowa</a>
+        <a class="nav-item nav-link" href="#about">O nas</a>
+        <a class="nav-item nav-link" href="#offer">Oferta</a>
+        <a class="nav-item nav-link" href="#gallery">Galeria</a>
+        <a class="nav-item nav-link" href="#prices">Ceny</a>
+        <a class="nav-item nav-link" href="#team">Zespół</a>
+        <a class="nav-item nav-link" href="#contact">Kontakt</a>
       </div>
     </div>
   </nav>
 
-  <div id="features" style="height: 100vh; background-color: rgb(158, 56, 56)"></div>
-  <div id="pricing" style="height: 100vh;"></div>
+  <div style='height:100vh;'></div>
+  <div style='height:100vh;'></div>
+  <div style='height:100vh;' id="about"></div>
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -44,6 +51,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
+  <script src="./js/animation.js"></script>
+  <script src="./js/jquery.waypoints.min/"></script>
 </body>
 
 </html>

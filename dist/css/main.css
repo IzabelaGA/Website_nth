@@ -8,4 +8,25 @@ html {
 
 body {
   position: relative;
-  font-family: 'Dosis', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  background-color: #3ba593;
+  background-image: linear-gradient(to left bottom, #2ba593, #33ad98, #3bb59c, #43bea0, #4cc6a4); }
+
+nav .navbar-brand {
+  font-family: 'Ribeye', cursive; }
+
+nav a, nav i {
+  color: #333;
+  transition: color .3s; }
+
+nav a:hover {
+  color: #f4f4f4; }
+
+nav i {
+  padding: .7rem; }
+
+nav .active {
+  color: #f4f4f4; }
+
+nav .navbar-nav {
+  text-transform: uppercase; }
