@@ -40,6 +40,12 @@ header {
     background: url("../img/hero.jpg") center center/cover no-repeat;
     background-attachment: fixed;
     z-index: 0; }
+    header .hero-img .fa-chevron-down {
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem; }
     header .hero-img .hero-shadow {
       position: absolute;
       width: 100%;
@@ -55,3 +61,5 @@ header {
       height: 100%; }
       header .hero-img .hero-text p {
         padding: 1rem; }
+      header .hero-img .hero-text .btn-outline-light {
+        font-family: 'Ribeye', cursive; }
