@@ -9,7 +9,11 @@ html
 body
   position: relative
   font-family: 'Montserrat', sans-serif
-  background-image: linear-gradient(to left bottom, #2ba593, #33ad98, #3bb59c, #43bea0, #4cc6a4);
+  background-image: linear-gradient(to left bottom, #2ba593, #33ad98, #3bb59c, #43bea0, #4cc6a4)
+  // height: 100vh
+
+  .dark-text
+    color: #33ad98 
 
 // Navbar
 nav
@@ -17,13 +21,40 @@ nav
   .navbar-brand
     font-family: 'Ribeye', cursive
   a, i
-    color: #333
+    color: #fff
     transition: color .3s
-  a:hover
-    color: #f4f4f4
-  i 
+  a:hover, .active
+    color: #333
+  .navbar-toggler i 
     padding: .7rem
-  .active
-    color: #f4f4f4
   .navbar-nav
     text-transform: uppercase
+
+// Header
+header 
+  color: #fff
+  h1 
+    text-transform: uppercase
+    font-weight: bold
+  .hero-img
+    position: relative
+    height: 100vh
+    background: url('../img/hero.jpg') center center/cover no-repeat
+    background-attachment: fixed
+    z-index: 0
+    .hero-shadow
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: rgba(0,0,0,.5)
+      z-index: -10
+
+    .hero-text
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center
+      flex-direction: column
+      height: 100%
+      p 
+        padding: 1rem

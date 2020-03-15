@@ -9,24 +9,49 @@ html {
 body {
   position: relative;
   font-family: 'Montserrat', sans-serif;
-  background-color: #3ba593;
   background-image: linear-gradient(to left bottom, #2ba593, #33ad98, #3bb59c, #43bea0, #4cc6a4); }
+  body .dark-text {
+    color: #33ad98; }
 
 nav .navbar-brand {
   font-family: 'Ribeye', cursive; }
 
 nav a, nav i {
-  color: #333;
+  color: #fff;
   transition: color .3s; }
 
-nav a:hover {
-  color: #f4f4f4; }
+nav a:hover, nav .active {
+  color: #333; }
 
-nav i {
+nav .navbar-toggler i {
   padding: .7rem; }
-
-nav .active {
-  color: #f4f4f4; }
 
 nav .navbar-nav {
   text-transform: uppercase; }
+
+header {
+  color: #fff; }
+  header h1 {
+    text-transform: uppercase;
+    font-weight: bold; }
+  header .hero-img {
+    position: relative;
+    height: 100vh;
+    background: url("../img/hero.jpg") center center/cover no-repeat;
+    background-attachment: fixed;
+    z-index: 0; }
+    header .hero-img .hero-shadow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -10; }
+    header .hero-img .hero-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      height: 100%; }
+      header .hero-img .hero-text p {
+        padding: 1rem; }
